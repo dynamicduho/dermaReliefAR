@@ -1,4 +1,4 @@
-package com.example.allerreef_app
+package com.example.reliefar_app
 
 import io.flutter.embedding.android.FlutterActivity
 

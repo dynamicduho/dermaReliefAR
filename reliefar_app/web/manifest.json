@@ -1,6 +1,6 @@
 {
-    "name": "allerreef_app",
-    "short_name": "allerreef_app",
+    "name": "reliefar_app",
+    "short_name": "reliefar_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

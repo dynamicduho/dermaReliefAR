@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.allerreef_app">
+    package="com.example.reliefar_app">
    <application
-        android:label="allerreef_app"
+        android:label="reliefar_app"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
