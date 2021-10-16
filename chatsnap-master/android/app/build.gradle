@@ -71,4 +71,4 @@ sceneform.asset(
     'sampledata/checkmark.obj',
     'default',
     'sampledata/checkmark.sfa',
-    'src/main/assets/Checkmark'
+    'src/main/assets/Checkmark')
