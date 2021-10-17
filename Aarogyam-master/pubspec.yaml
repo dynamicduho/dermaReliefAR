@@ -1,0 +1,176 @@
+name: healthreminders
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cloud_firestore: ^0.13.7
+  firebase_auth: ^0.16.1
+  google_sign_in: ^4.5.1
+  flutter_spinkit: ^4.1.2
+  flutter_launcher_icons: ^0.7.2
+  #  horizontal_indicator: ^0.1.0
+  provider: ^4.1.3
+#  scrolling_day_calendar: ^2.0.2
+#  calendar_timeline: ^0.6.0
+#  table_calendar: ^2.2.3
+  # shared_preferences: 0.5.2
+  # rxdart: ^0.22.0
+#  firebase_messaging: ^6.0.16
+  # flutter_open_whatsapp: ^0.1.2
+  flutter_local_notifications: ^1.4.4+2
+  flutter_email_sender: ^3.0.1
+  pedometer: ^2.0.1+2
+  intl: ^0.16.1
+  email_validator: ^1.0.0
+  flutter_share_me: ^0.9.1
+  jiffy: ^3.0.1
+  # hive: ^1.4.1+1
+  # hive_flutter: ^0.3.0+2
+  agora_rtc_engine: ^1.0.13
+#  permission_handler: ^3.0.0
+  permission_handler: ^5.0.1+1
+  url_launcher: ^5.5.0
+  # video_player: ^0.10.12
+
+
+
+
+
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter_launcher_name:
+  name: "MediRemi"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: 'assets/app_logo.png'
+
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/google.png
+    - assets/googlewhite.png
+    - assets/MaterialIcons-Regular.ttf
+    - assets/pill.png
+    - assets/Images/dots.png
+    - assets/Bottle.png
+    - assets/Tablet.png
+    - assets/Syringe.png
+    - assets/Doctor.png
+    - assets/MaterialIcons-Regular.ttf
+    - assets/Whatsapp.png
+    - assets/notification.mp3
+    - assets/Success Check.flr
+    
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/Fonts/Lato/Lato-Black.ttf
+        - asset: assets/Fonts/Lato/Lato-BlackItalic.ttf
+        - asset: assets/Fonts/Lato/Lato-Bold.ttf
+        - asset: assets/Fonts/Lato/Lato-BoldItalic.ttf
+        - asset: assets/Fonts/Lato/Lato-Italic.ttf
+        - asset: assets/Fonts/Lato/Lato-Light.ttf
+        - asset: assets/Fonts/Lato/Lato-LightItalic.ttf
+        - asset: assets/Fonts/Lato/Lato-Regular.ttf
+        - asset: assets/Fonts/Lato/Lato-Thin.ttf
+        - asset: assets/Fonts/Lato/Lato-ThinItalic.ttf
+    - family: Montserrat
+      fonts:
+            - asset: assets/Fonts/Montserrat/Montserrat-Black.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-BlackItalic.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-Bold.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-BoldItalic.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-ExtraBold.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-ExtraLight.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-ExtraLightItalic.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-Italic.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-Light.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-LightItalic.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-Medium.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-MediumItalic.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-Regular.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-SemiBold.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-SemiBoldItalic.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-Thin.ttf
+            - asset: assets/Fonts/Montserrat/Montserrat-ThinItalic.ttf
+    - family: Roboto
+      fonts:
+        - asset: assets/Fonts/Roboto/Roboto-Black.ttf
+        - asset: assets/Fonts/Roboto/Roboto-BlackItalic.ttf
+        - asset: assets/Fonts/Roboto/Roboto-Bold.ttf
+        - asset: assets/Fonts/Roboto/Roboto-BoldItalic.ttf
+        - asset: assets/Fonts/Roboto/Roboto-Italic.ttf
+        - asset: assets/Fonts/Roboto/Roboto-Light.ttf
+        - asset: assets/Fonts/Roboto/Roboto-LightItalic.ttf
+        - asset: assets/Fonts/Roboto/Roboto-Medium.ttf
+        - asset: assets/Fonts/Roboto/Roboto-MediumItalic.ttf
+        - asset: assets/Fonts/Roboto/Roboto-Regular.ttf
+        - asset: assets/Fonts/Roboto/Roboto-Thin.ttf
+        - asset: assets/Fonts/Roboto/Roboto-ThinItalic.ttf
+
+#    - family: Oswald
+#      fonts:
+#        - asset: assets/Fonts/Oswald
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+#   example:
+
+
+
+
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
