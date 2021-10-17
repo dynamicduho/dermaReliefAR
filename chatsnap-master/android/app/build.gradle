@@ -39,7 +39,7 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.example.chat_snap"
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 28
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -60,4 +60,15 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.8.0'
+    implementation 'com.google.ar.sceneform:core:1.8.0'
+    implementation 'com.google.ar:core:1.8.0'
 }
+
+apply plugin : 'com.google.ar.sceneform.plugin'
+
+sceneform.asset(
+    'sampledata/checkmark.obj',
+    'default',
+    'sampledata/checkmark.sfa',
+    'src/main/assets/Checkmark')
