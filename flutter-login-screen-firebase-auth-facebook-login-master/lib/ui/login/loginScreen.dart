@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_login_screen/constants.dart';
-import 'package:flutter_login_screen/main.dart';
-import 'package:flutter_login_screen/model/user.dart';
-import 'package:flutter_login_screen/services/authenticate.dart';
-import 'package:flutter_login_screen/services/helper.dart';
-import 'package:flutter_login_screen/ui/home/homeScreen.dart';
+import 'package:chatsnap/constants.dart';
+import 'package:chatsnap/main.dart';
+import 'package:chatsnap/model/user.dart';
+import 'package:chatsnap/services/authenticate.dart';
+import 'package:chatsnap/services/helper.dart';
+import 'package:chatsnap/ui/home/homeScreen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override

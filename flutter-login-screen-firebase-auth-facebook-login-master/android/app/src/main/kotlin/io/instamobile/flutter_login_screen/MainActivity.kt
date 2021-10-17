@@ -1,4 +1,4 @@
-package io.instamobile.flutter_login_screen
+package io.instamobile.chatsnap
 
 import androidx.annotation.NonNull
 import io.flutter.embedding.android.FlutterActivity

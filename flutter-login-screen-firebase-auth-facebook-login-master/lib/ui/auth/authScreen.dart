@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_screen/constants.dart';
-import 'package:flutter_login_screen/services/helper.dart';
-import 'package:flutter_login_screen/ui/login/loginScreen.dart';
-import 'package:flutter_login_screen/ui/signUp/signUpScreen.dart';
+import 'package:chatsnap/constants.dart';
+import 'package:chatsnap/services/helper.dart';
+import 'package:chatsnap/ui/login/loginScreen.dart';
+import 'package:chatsnap/ui/signUp/signUpScreen.dart';
 
 class AuthScreen extends StatelessWidget {
   @override

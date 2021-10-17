@@ -3,11 +3,13 @@ import 'dart:math';
 import 'package:firebase_auth/firebase_auth.dart' as auth;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_login_screen/constants.dart';
-import 'package:flutter_login_screen/main.dart';
-import 'package:flutter_login_screen/model/user.dart';
-import 'package:flutter_login_screen/services/helper.dart';
-import 'package:flutter_login_screen/ui/auth/authScreen.dart';
+import 'package:chatsnap/constants.dart';
+import 'package:chatsnap/main.dart';
+import 'package:chatsnap/model/user.dart';
+import 'package:chatsnap/services/helper.dart';
+import 'package:chatsnap/ui/auth/authScreen.dart';
+import 'package:bottom_navy_bar/bottom_navy_bar.dart';
+import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 
 class HomeScreen extends StatefulWidget {
   final User user;
@@ -19,6 +21,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeState extends State<HomeScreen> {
+  int _currentIndex = 0;
   late User user;
 
   @override
@@ -29,6 +32,8 @@ class _HomeState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var _selectedIndex;
+
     return Scaffold(
       drawer: Drawer(
         child: ListView(
@@ -46,6 +51,20 @@ class _HomeState extends State<HomeScreen> {
             ListTile(
               title: Text(
                 'Logout',
+                style: TextStyle(color: Colors.black),
+              ),
+              leading: Transform.rotate(
+                  angle: pi / 1,
+                  child: Icon(Icons.exit_to_app, color: Colors.black)),
+              onTap: () async {
+                await auth.FirebaseAuth.instance.signOut();
+                MyAppState.currentUser = null;
+                pushAndRemoveUntil(context, AuthScreen(), false);
+              },
+            ),
+            ListTile(
+              title: Text(
+                'History',
                 style: TextStyle(color: Colors.black),
               ),
               leading: Transform.rotate(
@@ -76,21 +95,21 @@ class _HomeState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             user.profilePictureURL == ''
-            ? CircleAvatar(
-                radius: 35,
-                backgroundColor: Colors.grey.shade400,
-                child: ClipOval(
-                  child: SizedBox(
-                    width: 70,
-                    height: 70,
-                    child: Image.asset(
-                      'assets/images/placeholder.jpg',
-                      fit: BoxFit.cover,
+                ? CircleAvatar(
+                    radius: 35,
+                    backgroundColor: Colors.grey.shade400,
+                    child: ClipOval(
+                      child: SizedBox(
+                        width: 70,
+                        height: 70,
+                        child: Image.asset(
+                          'assets/images/placeholder.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-              )
-            :displayCircleImage(user.profilePictureURL, 80, false),
+                  )
+                : displayCircleImage(user.profilePictureURL, 80, false),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(user.name),

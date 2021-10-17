@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_screen/constants.dart';
-import 'package:flutter_login_screen/services/helper.dart';
-import 'package:flutter_login_screen/ui/auth/authScreen.dart';
+import 'package:chatsnap/constants.dart';
+import 'package:chatsnap/services/helper.dart';
+import 'package:chatsnap/ui/auth/authScreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
