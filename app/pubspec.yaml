@@ -21,9 +21,11 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  
   flutter:
     sdk: flutter
   cloud_firestore: ^0.13.7
+  flutter_svg: ^0.19.3
   firebase_auth: ^0.16.1
   google_sign_in: ^4.5.1
   flutter_spinkit: ^4.1.2
@@ -103,6 +105,11 @@ flutter:
     - assets/Whatsapp.png
     - assets/notification.mp3
     - assets/Success Check.flr
+    - assets/Images/vector17.svg
+    - assets/Images/vector18.svg
+    - assets/Images/vector19.svg
+    - assets/Images/vector20.svg
+    - assets/Images/
     
 
   fonts:
@@ -152,6 +159,7 @@ flutter:
         - asset: assets/Fonts/Roboto/Roboto-Regular.ttf
         - asset: assets/Fonts/Roboto/Roboto-Thin.ttf
         - asset: assets/Fonts/Roboto/Roboto-ThinItalic.ttf
+        
 
 #    - family: Oswald
 #      fonts:
