@@ -19,7 +19,7 @@ class HomeState extends State<Home> {
     HomePage(),
     Medicine(),
     MoreReminders(),
-    ShoppingCart(),
+    // ShoppingCart(),
     MoreOptions(),
   ];
 
