@@ -172,52 +172,52 @@ class _SignupPageState extends State<SignupPage> {
                               SizedBox(
                                 height: 20.0,
                               ),
-                              TextFormField(
-                                validator: (input) {
-                                  if (input.isEmpty) {
-                                    return 'Please type your weight';
-                                  }
-                                  return null;
-                                },
-                                onSaved: (input) => _weight = input,
-                                decoration: InputDecoration(
-                                  hintText: "Weight in kg",
-                                  hintStyle: TextStyle(
-                                    fontFamily: "Monster",
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.grey,
-                                  ),
-                                  border: OutlineInputBorder(),
-//                                      focusedBorder: UnderlineInputBorder(
-//                                        borderSide: BorderSide(color: Colors.green),),
-                                ),
-                              ),
-                              SizedBox(
-                                height: 20.0,
-                              ),
-                              TextFormField(
-                                validator: (input) {
-                                  if (input.isEmpty) {
-                                    return 'Please type your height';
-                                  }
-                                  return null;
-                                },
-                                onSaved: (input) => _height = input,
-                                decoration: InputDecoration(
-                                  hintText: "Height in cm",
-                                  hintStyle: TextStyle(
-                                    fontFamily: "Monster",
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.grey,
-                                  ),
-                                  border: OutlineInputBorder(),
-//                                      focusedBorder: UnderlineInputBorder(
-//                                        borderSide: BorderSide(color: Colors.green),),
-                                ),
-                              ),
-                              SizedBox(
-                                height: 20.0,
-                              ),
+//                               TextFormField(
+//                                 validator: (input) {
+//                                   if (input.isEmpty) {
+//                                     return 'Please type your weight';
+//                                   }
+//                                   return null;
+//                                 },
+//                                 onSaved: (input) => _weight = input,
+//                                 decoration: InputDecoration(
+//                                   hintText: "Weight in kg",
+//                                   hintStyle: TextStyle(
+//                                     fontFamily: "Monster",
+//                                     fontWeight: FontWeight.bold,
+//                                     color: Colors.grey,
+//                                   ),
+//                                   border: OutlineInputBorder(),
+// //                                      focusedBorder: UnderlineInputBorder(
+// //                                        borderSide: BorderSide(color: Colors.green),),
+//                                 ),
+//                               ),
+//                               SizedBox(
+//                                 height: 20.0,
+//                               ),
+//                               TextFormField(
+//                                 validator: (input) {
+//                                   if (input.isEmpty) {
+//                                     return 'Please type your height';
+//                                   }
+//                                   return null;
+//                                 },
+//                                 onSaved: (input) => _height = input,
+//                                 decoration: InputDecoration(
+//                                   hintText: "Height in cm",
+//                                   hintStyle: TextStyle(
+//                                     fontFamily: "Monster",
+//                                     fontWeight: FontWeight.bold,
+//                                     color: Colors.grey,
+//                                   ),
+//                                   border: OutlineInputBorder(),
+// //                                      focusedBorder: UnderlineInputBorder(
+// //                                        borderSide: BorderSide(color: Colors.green),),
+//                                 ),
+//                               ),
+//                               SizedBox(
+//                                 height: 20.0,
+//                               ),
                               TextFormField(
                                 validator: (input) {
                                   if (input.isEmpty) {
@@ -241,76 +241,76 @@ class _SignupPageState extends State<SignupPage> {
                               SizedBox(
                                 height: 20.0,
                               ),
-                              DropdownButtonFormField<String>(
-                                decoration: InputDecoration(
-                                  border: const OutlineInputBorder(),
-                                ),
-                                hint: Text(
-                                  'Blood Group',
-                                  style: TextStyle(
-                                      color: Colors.grey,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                value: _bloodGroup,
-                                items: [
-                                  DropdownMenuItem<String>(
-                                      child: Text(
-                                        'A+',
-                                        style: TextStyle(color: Colors.black),
-                                      ),
-                                      value: 'A+'),
-                                  DropdownMenuItem<String>(
-                                      child: Text(
-                                        'B+',
-                                        style: TextStyle(color: Colors.black),
-                                      ),
-                                      value: 'B+'),
-                                  DropdownMenuItem<String>(
-                                      child: Text(
-                                        'AB+',
-                                        style: TextStyle(color: Colors.black),
-                                      ),
-                                      value: 'AB+'),
-                                  DropdownMenuItem<String>(
-                                      child: Text(
-                                        'O+',
-                                        style: TextStyle(color: Colors.black),
-                                      ),
-                                      value: 'O+'),
-                                  DropdownMenuItem<String>(
-                                      child: Text(
-                                        'A-',
-                                        style: TextStyle(color: Colors.black),
-                                      ),
-                                      value: 'A-'),
-                                  DropdownMenuItem<String>(
-                                      child: Text(
-                                        'B-',
-                                        style: TextStyle(color: Colors.black),
-                                      ),
-                                      value: 'B-'),
-                                  DropdownMenuItem<String>(
-                                      child: Text(
-                                        'AB-',
-                                        style: TextStyle(color: Colors.black),
-                                      ),
-                                      value: 'AB-'),
-                                  DropdownMenuItem<String>(
-                                      child: Text(
-                                        'O-',
-                                        style: TextStyle(color: Colors.black),
-                                      ),
-                                      value: 'O-'),
-                                ],
-                                onChanged: (String newValue) {
-                                  setState(() {
-                                    _bloodGroup = newValue;
-                                  });
-                                },
-                              ),
-                              SizedBox(
-                                height: 20.0,
-                              ),
+                              // DropdownButtonFormField<String>(
+                              //   decoration: InputDecoration(
+                              //     border: const OutlineInputBorder(),
+                              //   ),
+                              //   hint: Text(
+                              //     'Blood Group',
+                              //     style: TextStyle(
+                              //         color: Colors.grey,
+                              //         fontWeight: FontWeight.bold),
+                              //   ),
+                              //   value: _bloodGroup,
+                              //   items: [
+                              //     DropdownMenuItem<String>(
+                              //         child: Text(
+                              //           'A+',
+                              //           style: TextStyle(color: Colors.black),
+                              //         ),
+                              //         value: 'A+'),
+                              //     DropdownMenuItem<String>(
+                              //         child: Text(
+                              //           'B+',
+                              //           style: TextStyle(color: Colors.black),
+                              //         ),
+                              //         value: 'B+'),
+                              //     DropdownMenuItem<String>(
+                              //         child: Text(
+                              //           'AB+',
+                              //           style: TextStyle(color: Colors.black),
+                              //         ),
+                              //         value: 'AB+'),
+                              //     DropdownMenuItem<String>(
+                              //         child: Text(
+                              //           'O+',
+                              //           style: TextStyle(color: Colors.black),
+                              //         ),
+                              //         value: 'O+'),
+                              //     DropdownMenuItem<String>(
+                              //         child: Text(
+                              //           'A-',
+                              //           style: TextStyle(color: Colors.black),
+                              //         ),
+                              //         value: 'A-'),
+                              //     DropdownMenuItem<String>(
+                              //         child: Text(
+                              //           'B-',
+                              //           style: TextStyle(color: Colors.black),
+                              //         ),
+                              //         value: 'B-'),
+                              //     DropdownMenuItem<String>(
+                              //         child: Text(
+                              //           'AB-',
+                              //           style: TextStyle(color: Colors.black),
+                              //         ),
+                              //         value: 'AB-'),
+                              //     DropdownMenuItem<String>(
+                              //         child: Text(
+                              //           'O-',
+                              //           style: TextStyle(color: Colors.black),
+                              //         ),
+                              //         value: 'O-'),
+                              //   ],
+                              //   onChanged: (String newValue) {
+                              //     setState(() {
+                              //       _bloodGroup = newValue;
+                              //     });
+                              //   },
+                              // // ),
+                              // SizedBox(
+                              //   height: 20.0,
+                              // ),
                               DropdownButtonFormField<String>(
                                 decoration: InputDecoration(
                                   border: const OutlineInputBorder(),

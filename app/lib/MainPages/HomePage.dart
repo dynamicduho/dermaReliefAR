@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.topLeft,
                   padding: EdgeInsets.only(left: 15, right: 185, top: 20),
                   child: Text(
-                    "Your Reminders:",
+                    "Your Feed:",
                     style: TextStyle(
                       fontSize: 25,
                       fontFamily: 'Roboto',

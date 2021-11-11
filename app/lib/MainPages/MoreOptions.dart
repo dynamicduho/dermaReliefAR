@@ -76,7 +76,7 @@ class _MedicineState extends State<MoreOptions> {
   }
 
   String msg =
-      'Download MediRemi on Google Play Store through https://bit.ly/3iDVunK';
+      'I found the perfect moisturizer for my skintype thanks to #dermarelief! I love to use the app! Download Derma Relief now on Google Play Store through https://bit.ly/3iDVunK and see the magic!';
 
   @override
   Widget build(BuildContext context) {
@@ -102,7 +102,7 @@ class _MedicineState extends State<MoreOptions> {
                     child: Column(children: <Widget>[
                       ListTile(
                         leading: Icon(Icons.person_add),
-                        title: Text('Doctors'),
+                        title: Text('Shopping History'),
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
@@ -115,7 +115,7 @@ class _MedicineState extends State<MoreOptions> {
                       ),
                       ListTile(
                         leading: Icon(Icons.add_circle),
-                        title: Text('Appointments'),
+                        title: Text('Consult an expert'),
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
@@ -128,7 +128,7 @@ class _MedicineState extends State<MoreOptions> {
                       ),
                       ListTile(
                         leading: Icon(Icons.assessment),
-                        title: Text('Lab Tests'),
+                        title: Text('Stores near you'),
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
@@ -160,19 +160,19 @@ class _MedicineState extends State<MoreOptions> {
                         ),
                       ),
 
-                      ListTile(
-                        leading: Icon(Icons.video_call),
-                        title: Text('Video Calling'),
-                        onTap: () async {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) {
-                                return IndexPage();
-                              },
-                            ),
-                          );
-                        },
-                      ),
+                      // ListTile(
+                      //   leading: Icon(Icons.video_call),
+                      //   title: Text('Video Calling'),
+                      //   onTap: () async {
+                      //     Navigator.of(context).push(
+                      //       MaterialPageRoute(
+                      //         builder: (context) {
+                      //           return IndexPage();
+                      //         },
+                      //       ),
+                      //     );
+                      //   },
+                      // ),
                       // ListTile(
                       //   leading: Icon(Icons.video_call),
                       //   title: Text('YouTube'),
